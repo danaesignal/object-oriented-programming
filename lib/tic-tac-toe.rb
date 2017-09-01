@@ -1,4 +1,5 @@
 class TicTacToe
+  attr_accessor :board
   def initialize
     @winner = "nobody"
     @board = Hash.new
@@ -78,7 +79,7 @@ class TicTacToe
     end
 
     self.display_board()
-    
+
     case @winner
     when "nobody"
       puts "It's a draw! GG!"
@@ -90,5 +91,5 @@ class TicTacToe
   end
 end
 
-game = TicTacToe.new
-game.play_game
+# game = TicTacToe.new
+# game.play_game
